@@ -4,7 +4,7 @@
 
 ---
 
-## Why FrontForge AI?
+# Why FrontForge AI?
 
 * **100% Local & Private:** Your prompts and generated code never leave your machine.
 * **Zero API Fees:** Completely replaces costly cloud models (GPT-4/Claude) with local open-source models (Llama 3, Mistral, Qwen).
