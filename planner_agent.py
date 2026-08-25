@@ -1,4 +1,5 @@
 from clarification_agent import clarify
+import clarification_agent
 from langchain.agents import create_agent
 from langchain_ollama import ChatOllama
 from langchain.tools import tool
@@ -51,7 +52,8 @@ agent = create_agent(
     tools= [json_tool]
 )
 
-def main(raw_data):
+def main():
+    raw_data = clarification_agent.main()
     user_input = json.dumps(raw_data)
     print("[System] Running planner agent... Writing planner.json.")
     agent.invoke({"messages": [{"role": "user", "content": user_input}]})

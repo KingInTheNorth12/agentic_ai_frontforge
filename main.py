@@ -1,4 +1,4 @@
-import clarification_agent, planner_agent, UI_Architect, component_agent
+import clarification_agent, planner_agent, UI_Architect_v2, component_agent
 import os
 
 def main():
@@ -12,7 +12,7 @@ def main():
     print("Successfully created the plan. Let's move to next task...")
 
     print("Creating the UI Blueprint...")
-    UI_Architect.main()
+    UI_Architect_v2.main()
     print("Successfully created the UI Blueprint. Let's move to next task...")
 
     print("Creating components...")

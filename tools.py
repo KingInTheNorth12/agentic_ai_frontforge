@@ -32,14 +32,23 @@ def safe_project_path(root, rel):
     except ValueError:
         return None
 
+import stat
+
 def reset_output_folder(folder, clean=True):
     folder_abs = os.path.abspath(folder)
     cwd = os.path.abspath(os.getcwd())
     if os.path.commonpath([cwd, folder_abs]) != cwd or folder_abs == cwd:
         raise Exception("Unsafe output folder path")
     if os.path.exists(folder_abs) and clean:
-        shutil.rmtree(folder_abs)
-    os.makedirs(folder_abs, exist_ok=True)
+        def on_err(func, path, exc_info):
+            try:
+                os.chmod(path, stat.S_IWRITE)
+                func(path)
+            except Exception:
+                pass
+        shutil.rmtree(folder_abs, onerror=on_err)
+    if not clean:
+        os.makedirs(folder_abs, exist_ok=True)
 
 def create_folder(path):
     if path:
