@@ -1,0 +1,25 @@
+# Local/private single-owner configuration. No Docker socket is mounted.
+services:
+  studio:
+    build: .
+    init: true
+    ports:
+      - "127.0.0.1:8787:8787"
+      - "127.0.0.1:8788:8788"
+    environment:
+      FRONTEND_AGENT_ACCESS_TOKEN: ${FRONTEND_AGENT_ACCESS_TOKEN:?Set a long random studio access token}
+      FRONTEND_AGENT_PUBLIC_ORIGIN: ${FRONTEND_AGENT_PUBLIC_ORIGIN:-http://127.0.0.1:8787}
+      FRONTEND_AGENT_PREVIEW_ORIGIN: ${FRONTEND_AGENT_PREVIEW_ORIGIN:-http://127.0.0.1:8788}
+      OLLAMA_HOST: ${OLLAMA_HOST:-http://host.docker.internal:11434}
+      FRONTEND_AGENT_MODEL: ${FRONTEND_AGENT_MODEL:-qwen3:latest}
+      FRONTEND_AGENT_API_BASE_URL: ${FRONTEND_AGENT_API_BASE_URL:-}
+      FRONTEND_AGENT_API_MODEL: ${FRONTEND_AGENT_API_MODEL:-}
+      FRONTEND_AGENT_API_KEY: ${FRONTEND_AGENT_API_KEY:-}
+      FRONTEND_AGENT_STRUCTURED_OUTPUT: ${FRONTEND_AGENT_STRUCTURED_OUTPUT:-json_mode}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - studio-data:/data
+    stop_grace_period: 20s
+volumes:
+  studio-data:

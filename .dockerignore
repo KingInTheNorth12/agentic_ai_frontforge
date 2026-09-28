@@ -1,0 +1,15 @@
+.git
+.venv
+.frontend_agent
+**/node_modules
+**/__pycache__
+**/*.pyc
+**/*.egg-info
+**/dist
+studio/static
+build
+.env
+.env.*
+!.env.example
+.pytest_cache
+*.log

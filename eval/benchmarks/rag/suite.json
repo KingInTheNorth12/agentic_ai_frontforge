@@ -1,0 +1,222 @@
+[
+  {
+    "id": "react_usestate_hook",
+    "prompt": "How to declare state variables with useState in React 18?",
+    "query": "useState hook state management initial state setter function",
+    "target_library": "react",
+    "target_version": "18.2.0",
+    "target_major_version": "18",
+    "expected_paths": ["react/hooks/useState.md", "react/useState.md"],
+    "expected_symbols": ["useState"],
+    "accepted_alternatives": ["React.useState"]
+  },
+  {
+    "id": "react_useeffect_cleanup",
+    "prompt": "How to handle subscription cleanup in useEffect?",
+    "query": "useEffect cleanup function return event listener unsubscribe",
+    "target_library": "react",
+    "target_version": "18.2.0",
+    "target_major_version": "18",
+    "expected_paths": ["react/hooks/useEffect.md"],
+    "expected_symbols": ["useEffect"],
+    "accepted_alternatives": ["React.useEffect"]
+  },
+  {
+    "id": "react_usememo_performance",
+    "prompt": "How to memoize expensive computations with useMemo?",
+    "query": "useMemo dependency array memoize calculation performance",
+    "target_library": "react",
+    "target_version": "18.2.0",
+    "target_major_version": "18",
+    "expected_paths": ["react/hooks/useMemo.md"],
+    "expected_symbols": ["useMemo"],
+    "accepted_alternatives": ["React.useMemo"]
+  },
+  {
+    "id": "react_usecontext_provider",
+    "prompt": "How to pass data deeply using createContext and useContext?",
+    "query": "createContext useContext Provider value consumer context",
+    "target_library": "react",
+    "target_version": "18.2.0",
+    "target_major_version": "18",
+    "expected_paths": ["react/context.md"],
+    "expected_symbols": ["createContext", "useContext"],
+    "accepted_alternatives": ["Context.Provider"]
+  },
+  {
+    "id": "react_useref_dom",
+    "prompt": "How to access a DOM element directly using useRef?",
+    "query": "useRef current property DOM element focus ref attribute",
+    "target_library": "react",
+    "target_version": "18.2.0",
+    "target_major_version": "18",
+    "expected_paths": ["react/hooks/useRef.md"],
+    "expected_symbols": ["useRef"],
+    "accepted_alternatives": ["React.useRef"]
+  },
+  {
+    "id": "react_usecallback_handler",
+    "prompt": "How to prevent unnecessary child re-renders using useCallback?",
+    "query": "useCallback memoized callback function dependencies memo",
+    "target_library": "react",
+    "target_version": "18.2.0",
+    "target_major_version": "18",
+    "expected_paths": ["react/hooks/useCallback.md"],
+    "expected_symbols": ["useCallback"],
+    "accepted_alternatives": ["React.useCallback"]
+  },
+  {
+    "id": "react_memo_component",
+    "prompt": "How to skip re-rendering a component when props haven't changed?",
+    "query": "React.memo pure component props equality comparison",
+    "target_library": "react",
+    "target_version": "18.2.0",
+    "target_major_version": "18",
+    "expected_paths": ["react/memo.md"],
+    "expected_symbols": ["memo"],
+    "accepted_alternatives": ["React.memo"]
+  },
+  {
+    "id": "react_usereducer_state",
+    "prompt": "How to manage complex state logic with useReducer?",
+    "query": "useReducer dispatch action type reducer state initializer",
+    "target_library": "react",
+    "target_version": "18.2.0",
+    "target_major_version": "18",
+    "expected_paths": ["react/hooks/useReducer.md"],
+    "expected_symbols": ["useReducer"],
+    "accepted_alternatives": ["React.useReducer"]
+  },
+  {
+    "id": "react_router_create_browser_router",
+    "prompt": "How to configure routes using createBrowserRouter in React Router 6?",
+    "query": "createBrowserRouter RouterProvider routes path element Outlet",
+    "target_library": "react-router",
+    "target_version": "6.20.0",
+    "target_major_version": "6",
+    "expected_paths": ["react-router/createBrowserRouter.md"],
+    "expected_symbols": ["createBrowserRouter", "RouterProvider"],
+    "accepted_alternatives": ["Routes", "Route"]
+  },
+  {
+    "id": "react_router_use_navigate",
+    "prompt": "How to programmatically navigate pages with useNavigate hook?",
+    "query": "useNavigate navigate path replace state redirect hook",
+    "target_library": "react-router",
+    "target_version": "6.20.0",
+    "target_major_version": "6",
+    "expected_paths": ["react-router/useNavigate.md"],
+    "expected_symbols": ["useNavigate"],
+    "accepted_alternatives": ["Navigate"]
+  },
+  {
+    "id": "react_router_use_params",
+    "prompt": "How to extract URL path parameters using useParams?",
+    "query": "useParams dynamic route URL parameter id slug path",
+    "target_library": "react-router",
+    "target_version": "6.20.0",
+    "target_major_version": "6",
+    "expected_paths": ["react-router/useParams.md"],
+    "expected_symbols": ["useParams"],
+    "accepted_alternatives": ["params"]
+  },
+  {
+    "id": "react_router_outlet_nested",
+    "prompt": "How to render nested child routes using Outlet component?",
+    "query": "Outlet parent route nested layout child components",
+    "target_library": "react-router",
+    "target_version": "6.20.0",
+    "target_major_version": "6",
+    "expected_paths": ["react-router/Outlet.md"],
+    "expected_symbols": ["Outlet"],
+    "accepted_alternatives": ["<Outlet />"]
+  },
+  {
+    "id": "vite_config_alias",
+    "prompt": "How to set up path aliases (@ -> src) in vite.config.js?",
+    "query": "vite.config resolve alias @ path resolve dirname",
+    "target_library": "vite",
+    "target_version": "5.0.0",
+    "target_major_version": "5",
+    "expected_paths": ["vite/config.md"],
+    "expected_symbols": ["resolve.alias"],
+    "accepted_alternatives": ["alias"]
+  },
+  {
+    "id": "vite_env_variables",
+    "prompt": "How to use environment variables prefixed with VITE_ in code?",
+    "query": "import.meta.env VITE_ environment variables client side",
+    "target_library": "vite",
+    "target_version": "5.0.0",
+    "target_major_version": "5",
+    "expected_paths": ["vite/env-variables.md"],
+    "expected_symbols": ["import.meta.env"],
+    "accepted_alternatives": ["VITE_"]
+  },
+  {
+    "id": "vite_react_plugin",
+    "prompt": "How to configure @vitejs/plugin-react plugin in Vite?",
+    "query": "defineConfig plugins react plugin-react vite.config.js",
+    "target_library": "vite",
+    "target_version": "5.0.0",
+    "target_major_version": "5",
+    "expected_paths": ["vite/plugins.md"],
+    "expected_symbols": ["@vitejs/plugin-react"],
+    "accepted_alternatives": ["react()"]
+  },
+  {
+    "id": "tailwind_flex_grid_layout",
+    "prompt": "How to build a responsive grid layout with Tailwind CSS?",
+    "query": "grid grid-cols-1 md:grid-cols-3 gap-4 flex flex-col items-center",
+    "target_library": "tailwindcss",
+    "target_version": "3.4.0",
+    "target_major_version": "3",
+    "expected_paths": ["tailwind/layout.md"],
+    "expected_symbols": ["grid-cols", "flex"],
+    "accepted_alternatives": ["responsive design"]
+  },
+  {
+    "id": "tailwind_dark_mode",
+    "prompt": "How to enable class-based dark mode in Tailwind CSS?",
+    "query": "darkMode class dark:bg-gray-900 dark:text-white tailwind.config",
+    "target_library": "tailwindcss",
+    "target_version": "3.4.0",
+    "target_major_version": "3",
+    "expected_paths": ["tailwind/dark-mode.md"],
+    "expected_symbols": ["darkMode", "dark:"],
+    "accepted_alternatives": ["dark mode"]
+  },
+  {
+    "id": "lucide_react_icon_usage",
+    "prompt": "How to import and render icons from lucide-react in React components?",
+    "query": "import { ShoppingCart, User, Search, Menu } from lucide-react icon props size color",
+    "target_library": "lucide-react",
+    "target_version": "0.300.0",
+    "target_major_version": "0",
+    "expected_paths": ["lucide-react/icons.md"],
+    "expected_symbols": ["lucide-react"],
+    "accepted_alternatives": ["Icon"]
+  },
+  {
+    "id": "react_portal_modal",
+    "prompt": "How to render a modal outside the parent DOM node with createPortal?",
+    "query": "createPortal ReactDOM document.body portal overlay modal",
+    "target_library": "react",
+    "target_version": "18.2.0",
+    "target_major_version": "18",
+    "expected_paths": ["react/createPortal.md"],
+    "expected_symbols": ["createPortal"],
+    "accepted_alternatives": ["ReactDOM.createPortal"]
+  },
+  {
+    "id": "react_suspense_lazy",
+    "prompt": "How to lazy load components with React.lazy and Suspense?",
+    "query": "React.lazy Suspense fallback dynamic import code splitting",
+    "target_library": "react",
+    "target_version": "18.2.0",
+    "target_major_version": "18",
+    "expected_paths": ["react/lazy.md"],
+    "expected_symbols": ["lazy", "Suspense"],
+    "accepted_alternatives": ["React.lazy"]
+  }
+]

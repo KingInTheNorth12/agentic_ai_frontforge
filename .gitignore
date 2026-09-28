@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.frontend_agent/
+node_modules/
+dist/
+build/
+studio/static/
+.agent/
+.venv/
+*.egg-info/
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
